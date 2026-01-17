@@ -1,25 +1,18 @@
-import React, { useState } from 'react'
+
+import { useState } from "react"
 import "./MoodSongs.css"
 
-const MoodSongs = () => {
+const MoodSongs = ({Songs}) => {
 
-    const [Songs, setSongs] = useState([
-        {
-            title:"test-title",
-            artist:"test-artist",
-            url:"test-url"
-        },
-         {
-            title:"test-title",
-            artist:"test-artist",
-            url:"test-url"
-        },
-         {
-            title:"test-title",
-            artist:"test-artist",
-            url:"test-url"
+    const[isPlaying , setIsPlaying] = useState(null);
+
+    const hanhlePlayPause = (index) => {
+        if(isPlaying===index){
+            setIsPlaying(null);
+        }else{
+            setIsPlaying(index)
         }
-    ])
+    }
 
   return (
     <div className='mood-songs'>
@@ -32,8 +25,18 @@ const MoodSongs = () => {
                 </div>
 
                 <div className='play-pause-button'>
-                <i className="ri-pause-line"></i>
-                <i className="ri-play-fill"></i>
+                    {
+                        isPlaying===index &&
+                        <audio src={songs.audio} controls
+                         autoPlay={isPlaying===index}></audio>
+                    }
+                    <button onClick={()=>hanhlePlayPause(index)}>
+                        {isPlaying===index?
+                        <i className="ri-pause-fill"></i>:
+                        <i className="ri-play-fill"></i>
+                        }
+                    </button>
+                
         </div>
         </div>
     ))}
