@@ -1,3 +1,46 @@
 .mood-songs{
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5vh;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .song{
+    display: flex;
+    border: solid;
+         background-color: rgba(240, 248, 255, 0.186);
+        border-color: rgba(255, 255, 255, 0.28);
+        border-radius: 20px;
+        padding: 15px;
+        .title{
+            width: 100%;
+            h3{
+           font-size: x-large;
+            }
+            p{
+            margin-top: 2vh ;
+            opacity: 80%;
+            }
+        }
+            .play-pause-button{
+            display: flex;
+            audio{
+                width: 50vw;
+                margin-right: 4vw;
+            }
+            button{
+               border: none;
+               background: none;
+               font-size: x-large;
+               color: aliceblue;
+               text-shadow: 0 0 20px rgb(234, 0, 255);
+               &:hover{
+                transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                scale: 1.2;
+               }
+            }
+            }
+    }
 }

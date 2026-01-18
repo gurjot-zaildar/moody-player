@@ -16,28 +16,28 @@ const MoodSongs = ({Songs}) => {
 
   return (
     <div className='mood-songs'>
-        <h2>Recommended Songs</h2>
+        <h1>Recommended Songs ✨</h1>
         {Songs.map((songs,index)=>(
-            <div key={index}>
+            <div className="song" key={index}>
             <div className='title'>
                 <h3>{songs.title}</h3>
                 <p>{songs.artist}</p>
-                </div>
 
+                    </div>
                 <div className='play-pause-button'>
                     {
                         isPlaying===index &&
                         <audio src={songs.audio} controls
-                         autoPlay={isPlaying===index}></audio>
+                        autoPlay={isPlaying===index}></audio>
                     }
                     <button onClick={()=>hanhlePlayPause(index)}>
                         {isPlaying===index?
                         <i className="ri-pause-fill"></i>:
                         <i className="ri-play-fill"></i>
-                        }
+                    }
                     </button>
+                    </div>
                 
-        </div>
         </div>
     ))}
         </div>

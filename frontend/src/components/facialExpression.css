@@ -1,9 +1,53 @@
-.user-video-feed {
-  height: auto;
+.mood-element {
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.28);
+  background-color: rgba(240, 248, 255, 0.186);
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+  border-radius: 15px;
+  padding: 10px;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.mood-element video {
-  height: 200px;
-  width: 400px;
+.mood-element h1 {
+  margin-left: 2%;
+  text-shadow: 0px 0px 3px;
+}
+.mood-element .main-box {
+  display: flex;
+  gap: 5%;
+}
+.mood-element .main-box .video-box {
+  height: 35vh;
   margin-top: 30px;
+  border-radius: 10%;
+  margin-left: 2%;
+  box-shadow: 0px 0px 30px 1px aqua;
+}
+.mood-element .main-box .video-box video {
+  height: 35vh;
+  border-radius: 15px;
+}
+.mood-element .main-box .side-box h2 {
+  margin-top: 4vh;
+}
+.mood-element .main-box .side-box pre {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+}
+.mood-element .main-box .side-box button {
+  margin-top: 7vh;
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(157, 0, 255), rgb(60, 0, 255));
+  color: white;
+  border: none;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.522);
+  text-shadow: 0px 0px 4px;
+  font-size: 1.2rem;
+}
+.mood-element .main-box .side-box button:hover {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  scale: 1.06;
 }

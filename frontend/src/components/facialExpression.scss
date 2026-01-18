@@ -1,11 +1,57 @@
-.user-video-feed{
-    height: auto;
-}
-
 .mood-element{
-    video{
-        height: 200px;
-        width: 400px;
-        margin-top: 30px;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.28);
+    background-color: rgba(240, 248, 255, 0.186);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 15px;
+    padding: 10px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    h1{
+        margin-left: 2%;
+        text-shadow: 0px 0px 3px;
     }
+ .main-box{
+    display: flex;
+    gap: 5%;
+    .video-box{
+      
+            height: 35vh;
+            margin-top: 30px;
+            border-radius: 10%;
+            margin-left: 2%;
+            box-shadow: 0px 0px 30px 1px aqua;
+          video{
+              height: 35vh;
+              border-radius: 15px;
+        }
+    }
+    .side-box{
+        
+     h2{
+        margin-top: 4vh;
+     }
+     pre{
+        margin-top: 2vh;
+        font-size: 1.2rem;
+     }
+     button{
+        margin-top: 7vh;
+        border-radius: 12px;
+        padding: 10px;
+        background: linear-gradient(to right,rgb(157, 0, 255),rgb(60, 0, 255));
+        color: white;
+        border: none;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.522);
+        text-shadow: 0px 0px 4px;
+        font-size: 1.2rem;
+         &:hover{
+                transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                scale: 1.06;
+               }
+     }
+    }
+ }
 }

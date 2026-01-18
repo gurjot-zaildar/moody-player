@@ -58,13 +58,23 @@ export default function FacialExpression({setSongs}) {
   }, []);
   return (
     <div className='mood-element'>
+      <h1>Live Mood Detection</h1>
+      <div className='main-box'>
+      <div className='video-box'>
       <video
         ref={videoRef}
         autoPlay
         muted
         className='user-video-feed'
-      />
+        />
+        </div>
+        <div className='side-box'>
+          <h2>Live Mood Detection</h2>
+        <pre>Your Current mood is being analyzed in real-<br/>
+          time. Enjoy music tailored to your feelings.  </pre>
       <button onClick={detectMood}>Detect Mood</button>
+        </div>
+        </div>
 </div>
 );
 }
