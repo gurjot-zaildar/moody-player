@@ -32,7 +32,7 @@
 .mood-element .main-box .side-box h2 {
   margin-top: 4vh;
 }
-.mood-element .main-box .side-box pre {
+.mood-element .main-box .side-box p {
   margin-top: 2vh;
   font-size: 1.2rem;
 }
@@ -50,4 +50,25 @@
 .mood-element .main-box .side-box button:hover {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   scale: 1.06;
+}
+
+@media (max-width: 900px) {
+  .mood-element h1 {
+    font-size: x-large;
+  }
+  .mood-element .main-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .mood-element .main-box .video-box video {
+    width: 100%;
+    height: 100%;
+  }
+  .mood-element .main-box .side-box br {
+    display: none;
+  }
+  .mood-element .main-box .side-box button {
+    margin-left: 30%;
+    margin-bottom: 10px;
+  }
 }

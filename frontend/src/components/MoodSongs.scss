@@ -44,3 +44,27 @@
             }
     }
 }
+
+@media (max-width:900px) {
+    .mood-songs{
+        h1{
+            font-size: x-large;
+        }
+        .song{
+        .title{
+            h3{
+                font-size: medium;
+            }
+            p{
+                font-size: small;
+            }
+        }
+        .play-pause-button{
+            audio{
+                width: 30vw;
+                height: 30px;
+            }
+        }}
+    }
+    
+}

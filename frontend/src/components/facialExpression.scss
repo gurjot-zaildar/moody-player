@@ -33,7 +33,7 @@
      h2{
         margin-top: 4vh;
      }
-     pre{
+     p{
         margin-top: 2vh;
         font-size: 1.2rem;
      }
@@ -54,4 +54,33 @@
      }
     }
  }
+}
+
+@media(max-width: 900px){
+   .mood-element{
+h1{
+   font-size:x-large;
+}
+      .main-box{
+         display: flex;
+         flex-direction: column;
+
+         .video-box{
+         
+            video{
+               width: 100%;
+               height: 100%;
+            }
+         }
+         .side-box{
+            br{
+            display: none;
+            }
+            button{
+               margin-left: 30%;
+               margin-bottom: 10px;
+            }
+         }
+      }
+   }
 }

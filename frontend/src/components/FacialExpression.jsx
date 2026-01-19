@@ -70,8 +70,8 @@ export default function FacialExpression({setSongs}) {
         </div>
         <div className='side-box'>
           <h2>Live Mood Detection</h2>
-        <pre>Your Current mood is being analyzed in real-<br/>
-          time. Enjoy music tailored to your feelings.  </pre>
+        <p>Your Current mood is being analyzed in real-<br/>
+          time. Enjoy music tailored to your feelings.  </p>
       <button onClick={detectMood}>Detect Mood</button>
         </div>
         </div>
