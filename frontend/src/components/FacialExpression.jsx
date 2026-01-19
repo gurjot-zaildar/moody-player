@@ -43,7 +43,7 @@ export default function FacialExpression({setSongs}) {
 
           console.log(_expression)
 
-          axios.get(`http://moody-player-production-67cd.up.railway.app/songs?mood=${_expression}`)
+          axios.get(`https://moody-player-production-67cd.up.railway.app/songs?mood=${_expression}`)
            .then(response=>{
             console.log(response.data)
             setSongs(response.data.songs)
