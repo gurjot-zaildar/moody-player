@@ -5,7 +5,7 @@ const cors = require("cors")
 
 const app= express()
 app.use(cors({
-    origin:"https://moody-playe.netlify.app",
+    origin:"https://moody-player-orcin.vercel.app",
     credentials:true
 }));
 app.use(express.json())
